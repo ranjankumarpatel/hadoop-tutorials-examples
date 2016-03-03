@@ -5,4 +5,6 @@ WITH SERDEPROPERTIES
 ("hbase.columns.mapping" = ":key,ratings:userid,ratings:bookid,ratings:rating")
 TBLPROPERTIES ("hbase.table.name" = "hivehbase");
 
+SET hbase.zookeeper.quorum = localhost in settings in hue
+
 http://www.confusedcoders.com/bigdata/hive/hbase-hive-integration-querying-hbase-via-hive
